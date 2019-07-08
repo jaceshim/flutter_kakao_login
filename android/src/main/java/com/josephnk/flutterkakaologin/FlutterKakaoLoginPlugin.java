@@ -11,7 +11,7 @@ public class FlutterKakaoLoginPlugin implements MethodCallHandler {
   /** Plugin registration. */
   public static void registerWith(Registrar registrar) {
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_kakao_login");
-    channel.setMethodCallHandler(new FlutterPlugin());
+    channel.setMethodCallHandler(new FlutterKakaoLoginPlugin());
   }
 
   @Override
